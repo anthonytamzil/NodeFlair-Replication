@@ -5,7 +5,7 @@ import { jobs } from './constants';
 export default function App() {
   return (
     <>
-      <div className="w-full flex-row flex items-start">
+      <div className="w-screen lg:w-full flex-row flex">
         <div className="flex-col">
           {jobs?.map((job) => (
             <JobListingCard 
@@ -20,7 +20,7 @@ export default function App() {
             />
           ))}
         </div>
-        <div className='text-black bg-white w-[683px] p-[5px]'>
+        <div className='text-black bg-white hidden lg:flex w-[683px] p-[5px]'>
           hi
         </div>
       </div>
