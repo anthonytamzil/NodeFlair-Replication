@@ -9,8 +9,8 @@ export default function App() {
 
   return (
     <>
-      <div className="w-screen lg:w-full flex-row flex">
-        <div className="flex-col">
+      <div className="w-full flex-row flex">
+        <div className="w-full flex-col">
           {jobs?.map((job) => (
             <div onClick={() => changeSelection(jobs.indexOf(job))}>
               <JobListingCard 
@@ -35,4 +35,3 @@ export default function App() {
     </>
   )
 }
-
