@@ -48,11 +48,11 @@ export default function JobListingCard({
               &nbsp;{location}
             </div>
           </div>
-          <br/>
+          <hr className="mt-3"/>
         </div>
-        <div className="w-full px-[15px] overflow-hidden text-ellipsis flex flex-row gap-1">
+        <div className="px-[15px] leading-6 w-full h-10 overflow-hidden align-top text-ellipsis block text-[#3a3a3a] whitespace-nowrap">
           {techStack?.map((tech) => (
-            <TechCard title={tech} />
+            <TechCard title={tech}/>
           ))}
         </div>
       </div>
