@@ -30,16 +30,19 @@ export default function JobListingCard({
               <img className="rounded-[4px] font-[14px] w-[45px] h-[45px] mr-[10px]" src={logo}/>
             </div>
             <div className="text-[#3a3a3a]">
-              <p className="leading-6 text-left">{employer}</p>
+              <p className="leading-6 text-left">
+                <span>{employer}</span>
+                <span className="ml-3 text-[14px]">{rating} {rating === null ? "" : "★"}</span>
+              </p>
               <p className="max-w-[237px] leading-6 text-lg font-bold text-left">{jobTitle}</p>
             </div>
             <div className="ml-auto text-right">
               <div className="bg-[#DDF7E9] py-[5px] px-[8px] rounded-md">
-                <p className="text-[#1FC793] font-semibold">{field}</p>
+                <p className="text-[#1FC793] font-semibold text-[15px]">{field}</p>
               </div>
             </div>
           </div>
-          <div className="text-left flex-row flex text-[#3a3a3a] text-[14px] mt-[2px]">
+          <div className="text-left flex-row flex text-[#838383] mt-[2px]">
             <span className="text-[#1fc76a] pl-[55px] font-bold">
               {postingTime} minutes ago
             </span>
