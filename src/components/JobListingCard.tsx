@@ -26,7 +26,7 @@ export default function JobListingCard({
   est,
 }: JobListingCardProps) {
   return (
-    <div className="p-[10px] w-screen lg:w-fit">
+    <div className="p-[5px] w-screen lg:w-fit">
       <div className="h-fit w-full lg:w-[417px] bg-white border-[#E1E0DD] border p-[5px] rounded-lg hover:shadow cursor-pointer hover:delay-75 focus:border-4 focus:border-[#1FC76A]">
         <div className="px-5 pt-4 w-full h-fit flex">
           <div className="flex-row flex max-[440px]:flex-col">
