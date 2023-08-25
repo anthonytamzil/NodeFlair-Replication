@@ -1,4 +1,5 @@
 import './App.css'
+import JobDescription from './components/JobDescription';
 import JobListingCard from './components/JobListingCard';
 import { jobs } from './constants';
 
@@ -20,9 +21,7 @@ export default function App() {
             />
           ))}
         </div>
-        <div className='text-black bg-white hidden lg:flex w-[683px] p-[5px]'>
-          hi
-        </div>
+        <JobDescription />
       </div>
     </>
   )
