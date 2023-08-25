@@ -7,7 +7,9 @@ export const jobs = [
     techStack: ["HTTP", "MVC", "Rest API", "Linus", "PostgreSQL", "Docker", "C++"],
     field: "Fullstack",
     rating: null,
-    logo: "https://nodeflair.com/companies/8100.png"
+    logo: "https://nodeflair.com/companies/8100.png",
+    salary: "S$6,000 - S$8,000 / mth",
+    est: false
   },
   {
     employer: "CharCentric",
@@ -17,7 +19,9 @@ export const jobs = [
     techStack: ["Strategy", "Next.js", "Docker", ".NET Core", "BigQuery", "UML", "Git"],
     field: "Fullstack",
     rating: null,
-    logo: "https://nodeflair.com/companies/8933.png"
+    logo: "https://nodeflair.com/companies/8933.png",
+    salary: null,
+    est: false
   },
   {
     employer: "Gojek",
@@ -27,7 +31,9 @@ export const jobs = [
     techStack: ["Analytics", "Storm", "Google Cloud", "Flow", "Java", "Airflow", "C++"],
     field: "Data Eng",
     rating: 4.3,
-    logo: "https://nodeflair.com/companies/7.png"
+    logo: "https://nodeflair.com/companies/7.png",
+    salary: "S$9,493 - S$18,997 / mth",
+    est: true
   },
   {
     employer: "iZeno",
@@ -37,7 +43,9 @@ export const jobs = [
     techStack: ["Snowflake", "Jasper", "R", "Talend", "Dataiku", "UNIX", "Spotfire"],
     field: "Data Eng",
     rating: 3.3,
-    logo: "https://nodeflair.com/companies/116.png"
+    logo: "https://nodeflair.com/companies/116.png",
+    salary: null,
+    est: false
   },
   {
     employer: "Osotspa",
@@ -47,7 +55,9 @@ export const jobs = [
     techStack: ["AWS", "Google Cloud", "Microsoft", "Apache", "Azure", "Java", "HTML"],
     field: "Fullstack",
     rating: null,
-    logo: "https://nodeflair.com/companies/18436.png"
+    logo: "https://nodeflair.com/companies/18436.png",
+    salary: null,
+    est: false
   },
   {
     employer: "PlayPark",
@@ -57,7 +67,9 @@ export const jobs = [
     techStack: ["API", "JWT", ".NET Core", "OOP", "UML", "MSSQL", "JavaScript"],
     field: "Backend",
     rating: null,
-    logo: "https://nodeflair.com/companies/3088.png"
+    logo: "https://nodeflair.com/companies/3088.png",
+    salary: null,
+    est: false
   },
   {
     employer: "Fujitsu",
@@ -67,7 +79,9 @@ export const jobs = [
     techStack: ["VB.Net", "MSSQL", "C#", ".NET"],
     field: "Fullstack",
     rating: 3.5,
-    logo: "https://nodeflair.com/companies/1055.png"
+    logo: "https://nodeflair.com/companies/1055.png",
+    salary: null,
+    est: false
   },
   {
     employer: "London Stock Exchange Group",
@@ -77,7 +91,9 @@ export const jobs = [
     techStack: ["AWS", "Svelte", "Sprint", "Azure", "Angular", "Typescript", "JavaScript"],
     field: "Fullstack",
     rating: 3.9,
-    logo: "https://nodeflair.com/companies/1050.png"
+    logo: "https://nodeflair.com/companies/1050.png",
+    salary: null,
+    est: false
   },
   {
     employer: "Amity",
@@ -87,7 +103,9 @@ export const jobs = [
     techStack: ["AWS", "Rest API", "API", "Node.js"],
     field: "Fullstack",
     rating: 5,
-    logo: "https://nodeflair.com/companies/3147.png"
+    logo: "https://nodeflair.com/companies/3147.png",
+    salary: null,
+    est: false
   },
   {
     employer: "EPAM Systems",
@@ -97,6 +115,8 @@ export const jobs = [
     techStack: ["AWS", "Rest API", "Go", "CI", "SNS", ".NET Core", "SQS"],
     field: "Fullstack",
     rating: 4.4,
-    logo: "https://nodeflair.com/companies/1196.png"
+    logo: "https://nodeflair.com/companies/1196.png",
+    salary: null,
+    est: false
   },
 ]

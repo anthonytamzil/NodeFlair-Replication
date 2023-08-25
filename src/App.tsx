@@ -22,6 +22,8 @@ export default function App() {
                 field={job.field}
                 rating={job.rating}
                 logo={job.logo}
+                salary={job.salary}
+                est={job.est}
               />
             </div>
           ))}

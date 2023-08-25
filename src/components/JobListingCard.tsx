@@ -9,6 +9,8 @@ type JobListingCardProps = {
   field: string;
   rating: number | null;
   logo: string;
+  salary: string | null;
+  est: boolean
 }
 
 export default function JobListingCard({
@@ -19,12 +21,14 @@ export default function JobListingCard({
   techStack,
   field,
   rating,
-  logo
+  logo,
+  salary,
+  est,
 }: JobListingCardProps) {
   return (
     <div className="p-[5px] w-screen lg:w-fit">
       <div className="h-fit w-full lg:w-[417px] bg-white border-[#E1E0DD] border p-[5px] rounded-lg hover:shadow cursor-pointer hover:delay-75 focus:border-4 focus:border-[#1FC76A]">
-        <div className="p-5 w-full h-fit">
+        <div className="px-5 pt-4 w-full h-fit">
           <div className="flex-row flex">
             <div className="min-w-[55px]">
               <img className="rounded-[4px] font-[14px] w-[45px] h-[45px]" src={logo}/>
@@ -34,7 +38,7 @@ export default function JobListingCard({
                 <span>{employer}</span>
                 <span className="ml-3 text-[14px]">{rating} {rating === null ? "" : "★"}</span>
               </p>
-              <p className="max-w-[237px] leading-6 text-lg font-bold text-left">{jobTitle}</p>
+              <p className="leading-6 text-lg font-bold text-left">{jobTitle}</p>
             </div>
             <div className="ml-auto text-right">
               <div className="bg-[#DDF7E9] py-[5px] px-[8px] rounded-md">
@@ -42,7 +46,7 @@ export default function JobListingCard({
               </div>
             </div>
           </div>
-          <div className="text-left flex-row flex text-[#838383] mt-[2px]">
+          <div className="text-left flex-row flex text-[#838383] mt-[1px]">
             <span className="text-[#1fc76a] pl-[55px] font-bold">
               {postingTime} minutes ago
             </span>
@@ -51,9 +55,18 @@ export default function JobListingCard({
               &nbsp;{location}
             </div>
           </div>
-          
+          <div className="text-black text-left pl-[55px] text-[14px] mt-[6px] font-medium">
+            {salary} 
+            <span className={est ? "ml-2 font-normal bg-[#ececec] px-2 py-1 rounded-lg" : "hidden"}>
+              EST
+            </span>
+          </div>
         </div>
-        <hr className="mb-2 w-[365px] mx-auto"/>
+        
+        <div className="px-5 lg:px-0 mt-3">
+          <hr className="mb-2 w-full lg:w-[365px] mx-auto"/>
+        </div>
+        
         <div className="px-[15px] leading-6 w-full h-10 overflow-hidden text-ellipsis block text-[#3a3a3a] whitespace-nowrap text-left">
           {techStack?.map((tech) => (
             <TechCard title={tech}/>
