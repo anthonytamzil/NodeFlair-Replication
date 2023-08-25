@@ -28,11 +28,14 @@ export default function JobListingCard({
   return (
     <div className="p-[5px] w-screen lg:w-fit">
       <div className="h-fit w-full lg:w-[417px] bg-white border-[#E1E0DD] border p-[5px] rounded-lg shadow hover:-translate-y-1 duration-100 cursor-pointer hover:shadow-lg focus:border-[3px] focus:p-[3px] focus:border-[#1FC76A]" tabIndex={1}>
+        {/** Top portion of the job listing card **/}
         <div className="px-5 pt-4 w-full h-fit flex">
           <div className="flex-row flex max-[440px]:flex-col">
+            {/** Company logo **/}
             <div className="min-w-[55px]">
               <img className="rounded-[4px] font-[14px] w-[45px] h-[45px]" src={logo}/>
             </div>
+            {/** Company title, job title, location and posting time **/}
             <div className="text-[#3a3a3a]">
               <p className="leading-6 text-left">
                 <span>{employer}</span>
@@ -55,19 +58,19 @@ export default function JobListingCard({
                 </span>
               </div>
             </div>
-            
           </div>
+          {/** Type of position **/}
           <div className="ml-auto text-right">
             <div className="bg-[#DDF7E9] py-[5px] px-[8px] rounded-md">
               <p className="text-[#1FC793] font-semibold text-[15px]">{field}</p>
             </div>
           </div>
         </div>
-        
+        {/** Horizontal line separating top and bottom portion **/}
         <div className="px-5 lg:px-0 mt-3">
           <hr className="mb-2 w-full lg:w-[365px] mx-auto"/>
         </div>
-        
+        {/** Tech stack portion **/}
         <div className="px-[15px] leading-6 w-full h-10 overflow-hidden text-ellipsis block text-[#3a3a3a] whitespace-nowrap text-left">
           {techStack?.map((tech) => (
             <TechCard title={tech}/>
