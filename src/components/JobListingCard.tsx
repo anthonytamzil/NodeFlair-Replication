@@ -23,15 +23,15 @@ export default function JobListingCard({
 }: JobListingCardProps) {
   return (
     <div className="p-[5px]">
-      <div className="h-40 w-[417px] bg-white border-[#E1E0DD] border p-[5px] rounded-lg hover:shadow cursor-pointer hover:delay-75 focus:border-4 focus:border-[#1FC76A]">
-        <div className="p-5 w-full h-[110px]">
+      <div className="h-fit w-[417px] bg-white border-[#E1E0DD] border p-[5px] rounded-lg hover:shadow cursor-pointer hover:delay-75 focus:border-4 focus:border-[#1FC76A]">
+        <div className="p-5 w-full h-fit">
           <div className="flex-row flex">
             <div>
               <img className="rounded-[4px] font-[14px] w-[45px] h-[45px] mr-[10px]" src={logo}/>
             </div>
             <div className="text-[#3a3a3a]">
-              <p className="leading-6 text-[14px]">{employer}</p>
-              <p className=" leading-6 text-lg font-bold text-left ">{jobTitle}</p>
+              <p className="leading-6 text-left">{employer}</p>
+              <p className="max-w-[237px] leading-6 text-lg font-bold text-left">{jobTitle}</p>
             </div>
             <div className="ml-auto text-right">
               <div className="bg-[#DDF7E9] py-[5px] px-[8px] rounded-md">
@@ -39,7 +39,7 @@ export default function JobListingCard({
               </div>
             </div>
           </div>
-          <div className="text-left mb-[6px] flex-row flex text-[#3a3a3a] text-[14px] mt-[2px]">
+          <div className="text-left flex-row flex text-[#3a3a3a] text-[14px] mt-[2px]">
             <span className="text-[#1fc76a] pl-[55px] font-bold">
               {postingTime} minutes ago
             </span>
@@ -48,9 +48,10 @@ export default function JobListingCard({
               &nbsp;{location}
             </div>
           </div>
-          <hr className="mt-3"/>
+          
         </div>
-        <div className="px-[15px] leading-6 w-full h-10 overflow-hidden align-top text-ellipsis block text-[#3a3a3a] whitespace-nowrap">
+        <hr className="mb-2 w-[365px] mx-auto"/>
+        <div className="px-[15px] leading-6 w-full h-10 overflow-hidden text-ellipsis block text-[#3a3a3a] whitespace-nowrap text-left">
           {techStack?.map((tech) => (
             <TechCard title={tech}/>
           ))}

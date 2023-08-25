@@ -1,20 +1,25 @@
 import './App.css'
-import JobListingCard from './components/jobListingCard';
+import JobListingCard from './components/JobListingCard';
+import { jobs } from './constants';
 
 export default function App() {
   return (
     <>
       <div className="w-full flex-row flex items-start">
-        <JobListingCard 
-          employer='Henan Putihrai Asset Management' 
-          jobTitle='Software Engineer' 
-          postingTime={3} 
-          location='Indonesia' 
-          techStack={["HTTP", "MVC", "Rest API", "Linus", "PostgreSQL", "Docker", "C++"]}
-          field='Fullstack'
-          rating={null}
-          logo="https://nodeflair.com/companies/8933.png"
-        />
+        <div className="flex-col">
+          {jobs?.map((job) => (
+            <JobListingCard 
+              employer={job.employer} 
+              jobTitle={job.jobTitle} 
+              postingTime={job.postingTime}
+              location={job.location}
+              techStack={job.techStack}
+              field={job.field}
+              rating={job.rating}
+              logo={job.logo}
+            />
+          ))}
+        </div>
         <div className='text-black bg-white w-[683px] p-[5px]'>
           hi
         </div>
